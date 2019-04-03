@@ -1,0 +1,79 @@
+%margin{
+    margin-top: 0;
+      margin-bottom: 0;
+}
+
+.title {
+    width: 74.2rem;
+    height: 7rem;
+    font-size: 6.5rem;
+    @include fontstyle;
+    line-height: 1.08;
+    letter-spacing: 0.1px;
+    color: #000000;
+    margin-top: 0;
+    display: inline-block;
+  }
+  
+  .subtitle {
+    width: 59.5rem;
+    height: 5.8rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: 0px;
+    text-align: center;
+    color: $color-black;
+    display: inline-block;
+  }
+  
+
+  .countgroup{
+    &__number{
+      width: 6.9rem;
+      height: 7rem;
+      font-size: 5.5rem;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.27;
+      letter-spacing: 0.1px;
+      color: $color-black;
+      display: inline-block; 
+      @extend %margin;
+      text-align: center;
+    }
+    &__text {
+      width: 13.8rem;
+      height: 3rem;
+      font-size: 1.3rem;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.31;
+      letter-spacing: -0.2px;
+      text-align: center;
+      color: $color-black;
+      text-transform: uppercase;
+      @extend %margin;
+    }
+  }
+  
+
+.lettercontainer{
+
+    &__title{
+  width: 27.7rem;
+  height: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: $color-black;
+  display: inline-block; 
+}
+  }

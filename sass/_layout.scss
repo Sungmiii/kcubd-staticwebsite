@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-template-columns: [lside-start] 250px [lside-end] repeat(12, [col-start] 1fr [col-end]) [rside-start] 250px [rside-end];
+    grid-template-rows: 200px 2fr 1fr 200px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .header {
+    grid-column: col-start 1 / col-end 12;
+    margin: 0;
+  }
+
+  .main {
+    grid-column: col-start 1 / col-end 12;
+    text-align: center;
+  }
+  
+  .lettercontainer{
+    grid-column: col-start 1 / col-end 12;
+    text-align: center;
+  }
+  .countbox {
+    grid-column: col-start 2 / col-end 11;
+    display: flex;
+    justify-content: space-around;
+  }
+  .countgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
