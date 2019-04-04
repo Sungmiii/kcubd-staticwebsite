@@ -4,26 +4,64 @@
     grid-template-rows: 200px 2fr 1fr 200px;
     justify-items: center;
     align-items: center;
+
+    @include responsive(tabport) {
+      grid-template-columns:repeat(4, [col-start] 1fr [col-end]);
+    }
+
+    @include responsive(phone) {
+     grid-template-columns: [col-start] 1fr [col-end];
+     grid-template-rows: 150px 2fr 1fr 150px;
+    }
+
+    @include responsive(tabportheight) {
+      position: absolute;
+      top:25%;
+      transform: translate(0,-25%);
+    }
   }
 
   .header {
     grid-column: col-start 1 / col-end 12;
     margin: 0;
+    @include responsive(phone) {
+      grid-column: col-start 1 / -1;
+     }
+    
   }
 
   .main {
     grid-column: col-start 1 / col-end 12;
     text-align: center;
+    @include responsive(phone) {
+      grid-column: col-start 1 / -1;
+     }
+    
   }
   
   .lettercontainer{
     grid-column: col-start 1 / col-end 12;
     text-align: center;
+    @include responsive(phone) {
+      grid-column: col-start 1 / -1;
+     }
+    
   }
   .countbox {
     grid-column: col-start 2 / col-end 11;
     display: flex;
     justify-content: space-around;
+
+    @include responsive(tabport) {
+      grid-column: col-start 1 / -1;
+  }
+
+    @include responsive(phone) {
+      grid-column: col-start 1 / -1;
+     }
+
+   
+    
   }
   .countgroup {
     display: flex;

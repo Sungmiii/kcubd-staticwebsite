@@ -1,6 +1,6 @@
 %margin{
     margin-top: 0;
-      margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .title {
@@ -13,6 +13,12 @@
     color: #000000;
     margin-top: 0;
     display: inline-block;
+
+    @include responsive(phone) {
+      width: 100%;
+      font-size: 3.5rem;
+      margin-bottom: 0 !important;
+    }
   }
   
   .subtitle {
@@ -27,10 +33,23 @@
     text-align: center;
     color: $color-black;
     display: inline-block;
+
+    @include responsive(phone) {
+      width: 85%;
+      
+    }
   }
   
 
   .countgroup{
+    &:not(:last-child) {
+      @include responsive(phone) {
+        margin-right: 3 rem;    
+      }
+    }
+    
+
+    
     &__number{
       width: 6.9rem;
       height: 7rem;
@@ -38,12 +57,15 @@
       font-weight: 600;
       font-style: normal;
       font-stretch: normal;
-      line-height: 1.27;
       letter-spacing: 0.1px;
       color: $color-black;
       display: inline-block; 
       @extend %margin;
       text-align: center;
+      @include responsive(phone) {
+        font-size: 3.5rem;  
+        line-height: 2.5;  
+      }
     }
     &__text {
       width: 13.8rem;
@@ -58,6 +80,9 @@
       color: $color-black;
       text-transform: uppercase;
       @extend %margin;
+      @include responsive(phone) {
+        width: 6rem;
+      }
     }
   }
   

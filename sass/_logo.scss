@@ -2,6 +2,11 @@
     &__logo {
         width: 11.8rem;
         height: 13.922rem;
+        @include responsive(phone) {
+            width: 8rem;
+            height: 10rem;
+          }
     }
+    
 }
  

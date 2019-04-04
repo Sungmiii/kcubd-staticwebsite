@@ -12,6 +12,11 @@
         border: solid 1px $color-primary;
         padding: 2rem;
         transition: all .2s;
+
+        @include responsive(phone) {
+            width: 35rem;
+        }
+
         &:focus {
             outline: none;
             box-shadow: 0 1.5rem 2rem rgba($color-light-grey,.3);
@@ -28,6 +33,11 @@
     &__submit{
         position:absolute;
         width: 15.2rem;
+
+        @include responsive(phone) {
+            width:12rem;
+        }
+
         height: 4.7rem;
         border-radius: 2.35rem;
         background-color: $color-primary;
@@ -45,6 +55,10 @@
       &:hover{ 
           width: 17rem;
           background-color: $color-primary-dark;
+
+          @include responsive(phone) {
+            width: 13rem;
+        }
       }
       &::focus {
           outline: none;

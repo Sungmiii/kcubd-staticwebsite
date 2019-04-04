@@ -4,3 +4,33 @@
     font-stretch: normal;
     text-transform: uppercase;
 }
+
+@mixin responsive($breakPoint) {
+    @if $breakPoint == phone {
+        @media only screen and (max-width: 37.5em) { //600px
+            @content
+        }
+    }
+
+    @if $breakPoint == tabport {
+        @media only screen and (max-width:50em ) { //800px
+            @content
+        }
+    }
+    @if $breakPoint == tabland {
+        @media only screen and (max-width:62.5em ) { //1000px
+            @content
+        }
+    }
+    @if $breakPoint == desktop {
+        @media only screen and (max-width:75em ) { //1200px
+            @content
+        }
+    }
+
+    @if $breakPoint == tabportheight {
+        @media only screen and (min-height:62.5em ) { 
+            @content
+        }
+    }
+}
