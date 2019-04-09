@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: [lside-start] 250px [lside-end] repeat(12, [col-start] 1fr [col-end]) [rside-start] 250px [rside-end];
-    grid-template-rows: 200px 2fr 1fr 200px 30px;
+    grid-template-rows: 200px 2fr 1fr 1fr 200px 30px;
     justify-items: center;
     align-items: center;
 
@@ -37,6 +37,14 @@
       grid-column: col-start 1 / -1;
      }
     
+  }
+
+  .subtitlebox{
+    grid-column: col-start 1 / col-end 12;
+    text-align: center;
+    @include responsive(phone) {
+      grid-column: col-start 1 / -1;
+     }
   }
   
   .lettercontainer{
