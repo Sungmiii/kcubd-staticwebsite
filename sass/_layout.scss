@@ -11,7 +11,7 @@
 
     @include responsive(phone) {
      grid-template-columns: [col-start] 1fr [col-end];
-     grid-template-rows: 150px 2fr 1fr 150px 30px;
+     grid-template-rows: 100px 100px 100px 100px 130px 30px;
     }
 
     @include responsive(tabportheight) {
