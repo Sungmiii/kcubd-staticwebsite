@@ -119,7 +119,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: [lside-start] 250px [lside-end] repeat(12, [col-start] 1fr [col-end]) [rside-start] 250px [rside-end];
-  grid-template-rows: 200px 100px 100px 150px 200px 30px;
+  grid-template-rows: 200px 100px 100px 150px 150px 30px;
   justify-items: center;
   align-items: center; }
   @media only screen and (max-width: 50em) {
@@ -128,7 +128,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .container {
       grid-template-columns: [col-start] 1fr [col-end];
-      grid-template-rows: 100px 100px 100px 100px 130px 30px; } }
+      grid-template-rows: 120px 100px 50px 120px 130px 30px; } }
   @media only screen and (min-height: 62.5em) {
     .container {
       position: absolute;
