@@ -16,12 +16,9 @@ body {
   font-family: "Amiko", sans-serif;
   font-weight: 300;
   line-height: 1.6;
-  background-image: url(../img/kcubd_bg.jpg);
+  background-color: #000;
   width: 100%;
   height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   position: relative; }
 
 .title, .countgroup__number, .countgroup__text {
@@ -38,7 +35,7 @@ body {
   text-transform: uppercase;
   line-height: 1.08;
   letter-spacing: 0.1px;
-  color: #000000;
+  color: #fff;
   margin-top: 0;
   display: inline-block; }
   @media only screen and (max-width: 37.5em) {
@@ -56,7 +53,7 @@ body {
   line-height: 1.88;
   letter-spacing: 0px;
   text-align: center;
-  color: #000;
+  color: #fff;
   display: inline-block; }
   @media only screen and (max-width: 37.5em) {
     .subtitlebox__text {
@@ -74,7 +71,7 @@ body {
   font-style: normal;
   font-stretch: normal;
   letter-spacing: 0.1px;
-  color: #000;
+  color: #fff;
   display: inline-block;
   text-align: center; }
   @media only screen and (max-width: 37.5em) {
@@ -92,14 +89,14 @@ body {
   line-height: 2.31;
   letter-spacing: -0.2px;
   text-align: center;
-  color: #000;
+  color: #fff;
   text-transform: uppercase; }
   @media only screen and (max-width: 37.5em) {
     .countgroup__text {
       width: 6rem; } }
 
 .lettercontainer__title {
-  width: 27.7rem;
+  width: 40rem;
   height: 3rem;
   font-size: 2rem;
   font-weight: bold;
@@ -107,7 +104,7 @@ body {
   font-stretch: normal;
   line-height: 1.5;
   letter-spacing: 0px;
-  color: #000;
+  color: #fff;
   display: inline-block; }
 
 .margin-bottom-small {
@@ -115,6 +112,9 @@ body {
 
 .margin-bottom-medium {
   margin-bottom: 4rem; }
+
+.margin-bottom-large {
+  margin-bottom: 6rem; }
 
 .container {
   display: grid;
@@ -194,6 +194,7 @@ body {
       height: 10rem; } }
 
 .socialcontainer__icon {
+  fill: #fff;
   width: 2rem;
   height: 2rem; }
   .socialcontainer__icon:hover {
