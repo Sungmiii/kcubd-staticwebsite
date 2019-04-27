@@ -1,8 +1,7 @@
 
 .form {
     &__group {
-        display: flex;
-        justify-content: flex-end;
+        text-align: left !important;
         position: relative;
     }
     &__input{
@@ -33,7 +32,7 @@
     &__submit{
         position:absolute;
         width: 15.2rem;
-
+        right: 0;
         @include responsive(phone) {
             width:12rem;
         }
