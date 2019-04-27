@@ -10,7 +10,7 @@
     @include fontstyle;
     line-height: 1.08;
     letter-spacing: 0.1px;
-    color: #000000;
+    color: $color-white;
     margin-top: 0;
     display: inline-block;
     @extend %margin;
@@ -30,7 +30,7 @@
     line-height: 1.88;
     letter-spacing: 0px;
     text-align: center;
-    color: $color-black;
+    color: $color-white;
     display: inline-block;
 
     @include responsive(phone) {
@@ -57,7 +57,7 @@
       font-style: normal;
       font-stretch: normal;
       letter-spacing: 0.1px;
-      color: $color-black;
+      color: $color-white;  
       display: inline-block; 
       @extend %margin;
       text-align: center;
@@ -76,7 +76,7 @@
       line-height: 2.31;
       letter-spacing: -0.2px;
       text-align: center;
-      color: $color-black;
+      color: $color-white;
       text-transform: uppercase;
       @extend %margin;
       @include responsive(phone) {
@@ -97,7 +97,7 @@
   font-stretch: normal;
   line-height: 1.5;
   letter-spacing: 0px;
-  color: $color-black;
+  color: $color-white;
   display: inline-block; 
 }
   }

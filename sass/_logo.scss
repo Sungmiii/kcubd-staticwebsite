@@ -15,6 +15,7 @@
 
 .socialcontainer { 
         &__icon {
+            fill:$color-white;
             width:2rem;
             height: 2rem;
             &:hover {
