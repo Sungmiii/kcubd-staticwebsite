@@ -31,10 +31,11 @@
     }
     &__submit{
         position:absolute;
-        width: 15.2rem;
-        right: 0;
+        width: 20rem;
+        left:50%;
+        transform: translate(-50%,0);
         @include responsive(phone) {
-            width:12rem;
+            width:17rem;
         }
 
         height: 4.7rem;

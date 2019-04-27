@@ -99,6 +99,7 @@ body {
   width: 40rem;
   height: 3rem;
   font-size: 2rem;
+  text-align: center;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -115,6 +116,10 @@ body {
 
 .margin-bottom-large {
   margin-bottom: 6rem; }
+
+.margin-top-bottom-medium {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .container {
   display: grid;
@@ -226,8 +231,9 @@ body {
 
 .form__submit {
   position: absolute;
-  width: 15.2rem;
-  right: 0;
+  width: 20rem;
+  left: 50%;
+  transform: translate(-50%, 0);
   height: 4.7rem;
   border-radius: 2.35rem;
   background-color: #5cd8ea;
@@ -244,7 +250,7 @@ body {
   border: none; }
   @media only screen and (max-width: 37.5em) {
     .form__submit {
-      width: 12rem; } }
+      width: 17rem; } }
   .form__submit:hover {
     width: 17rem;
     background-color: #4fb7c6; }
