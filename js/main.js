@@ -16,7 +16,7 @@ const countDown = function (due) {
     return count;
 }
 
-const goal = new Date(2019, 6 - 1, 14);
+const goal = new Date(2019, 6 - 1, 16);
 
 const recalc = function () {
     let counter = countDown(goal);
