@@ -133,7 +133,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .container {
       grid-template-columns: [col-start] 1fr [col-end];
-      grid-template-rows: 120px 100px 50px 125px 300px 130px; } }
+      grid-template-rows: 120px 100px 50px 125px 300px 175px; } }
   @media only screen and (min-height: 62.5em) {
     .container {
       position: absolute;
