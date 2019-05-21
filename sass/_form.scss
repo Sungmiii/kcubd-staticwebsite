@@ -1,0 +1,23 @@
+#mc_embed_signup {
+    clear: left;
+    color:$color-white;
+    font-size: 1.4rem;
+    font-family: inherit;
+    width: 500px;
+    & input {
+        border-radius: none !important;
+        padding: 1.5rem .5rem !important;
+    }
+    & label {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    @include responsive(phone) {
+        width: 265px;
+       }
+}
+
+
+// #mc-embedded-subscribe {
+//     margin: 0 !important;
+// }

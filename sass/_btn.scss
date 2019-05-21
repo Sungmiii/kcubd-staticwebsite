@@ -30,31 +30,35 @@
     }
     }
     &__submit{
-        position:absolute;
-        width: 20rem;
-        left:50%;
-        transform: translate(-50%,0);
+        position:absolute !important;
+        width: 20rem !important;
+        left:50% !important;
+        font-size: 1.7rem !important;
+        letter-spacing: 1px !important;
+        font-weight: 700 !important;
+        transform: translate(-50%,0%) !important;
         @include responsive(phone) {
             width:17rem;
         }
 
-        height: 4.7rem;
-        border-radius: 2.35rem;
-        background-color: $color-primary;
+        height: 4.7rem!important;
+        border-radius: 2.35rem !important;
+        background-color: $color-primary !important;
         cursor: pointer;
         transition: all .2s;
 
         font-size: 2rem;
         @include fontstyle;
-        line-height: 1.5;
+        line-height: 1.5 !important;
         letter-spacing: 0px;
         color: $color-white;
 
         border: none;
         
       &:hover{ 
-          width: 17rem;
-          background-color: $color-primary-dark;
+          width: 25rem !important;
+          left:50%;
+          background-color: $color-primary-dark !important;
 
           @include responsive(phone) {
             width: 13rem;

@@ -124,7 +124,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: [lside-start] 250px [lside-end] repeat(12, [col-start] 1fr [col-end]) [rside-start] 250px [rside-end];
-  grid-template-rows: 200px 100px 100px 150px 150px 30px;
+  grid-template-rows: 200px 100px 100px 100px 450px 100px;
   justify-items: center;
   align-items: center; }
   @media only screen and (max-width: 50em) {
@@ -133,7 +133,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .container {
       grid-template-columns: [col-start] 1fr [col-end];
-      grid-template-rows: 120px 100px 50px 120px 130px 30px; } }
+      grid-template-rows: 120px 100px 50px 125px 300px 130px; } }
   @media only screen and (min-height: 62.5em) {
     .container {
       position: absolute;
@@ -230,13 +230,16 @@ body {
     color: #bfbfbf; }
 
 .form__submit {
-  position: absolute;
-  width: 20rem;
-  left: 50%;
-  transform: translate(-50%, 0);
-  height: 4.7rem;
-  border-radius: 2.35rem;
-  background-color: #5cd8ea;
+  position: absolute !important;
+  width: 20rem !important;
+  left: 50% !important;
+  font-size: 1.7rem !important;
+  letter-spacing: 1px !important;
+  font-weight: 700 !important;
+  transform: translate(-50%, 0%) !important;
+  height: 4.7rem !important;
+  border-radius: 2.35rem !important;
+  background-color: #5cd8ea !important;
   cursor: pointer;
   transition: all .2s;
   font-size: 2rem;
@@ -244,7 +247,7 @@ body {
   font-style: normal;
   font-stretch: normal;
   text-transform: uppercase;
-  line-height: 1.5;
+  line-height: 1.5 !important;
   letter-spacing: 0px;
   color: #fff;
   border: none; }
@@ -252,10 +255,27 @@ body {
     .form__submit {
       width: 17rem; } }
   .form__submit:hover {
-    width: 17rem;
-    background-color: #4fb7c6; }
+    width: 25rem !important;
+    left: 50%;
+    background-color: #4fb7c6 !important; }
     @media only screen and (max-width: 37.5em) {
       .form__submit:hover {
         width: 13rem; } }
   .form__submit::focus {
     outline: none; }
+
+#mc_embed_signup {
+  clear: left;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: inherit;
+  width: 500px; }
+  #mc_embed_signup input {
+    border-radius: none !important;
+    padding: 1.5rem .5rem !important; }
+  #mc_embed_signup label {
+    font-size: 1.6rem;
+    font-weight: 700; }
+  @media only screen and (max-width: 37.5em) {
+    #mc_embed_signup {
+      width: 265px; } }
